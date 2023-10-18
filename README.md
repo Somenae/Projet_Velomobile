@@ -10,7 +10,7 @@ contexte du projet:
 démocratiser le vélomobile, dans un environnement de plus en plus pollué ou le carburant est en hausse constante, les devs sont fans de vélo et on marre du trafic automobile.
 
 titre de l'entreprise:"LE VELO MOBILE FRANCAIS LVF"
-visiter usine a mandes pour visibilité, acheminer des matériaux par train de base, on decarbonise si c'est voiture, ou bateaux.
+visiter usine a mendes (aveyron) pour donner de la visibilitée, acheminer des matériaux par train de base, on decarbonise si c'est voiture, ou bateaux.
 usine photovoltaique eolien et nucleaires.
 
 contraintes: 
