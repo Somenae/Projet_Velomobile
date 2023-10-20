@@ -1,0 +1,14 @@
+:root {
+  --blue: #0B0CAC;
+  --red: #FD0808;
+  --black: #000;
+  --white: #fff;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Lobster Two', fantasy;
+}
