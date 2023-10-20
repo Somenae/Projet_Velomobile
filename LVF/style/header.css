@@ -1,0 +1,11 @@
+.navBar{
+  display: inline-flex;
+}
+
+.navBar>a {
+  width: 60px;
+}
+
+.navBar img {
+  width: 100%;
+}
