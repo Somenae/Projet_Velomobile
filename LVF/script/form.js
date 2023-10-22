@@ -19,5 +19,6 @@ export default class contactForm extends ManageDom {
         const labelHow = this.createMarkup("label", "Comment avez-vous entendu parler de nous ?", form, [{"class":"label"}, {"for":"how"}]);
         const inputHow = this.createMarkup("input", "", form, [{"type":"text"}, {"placeholder":"Comment avez-vous entendu parler de nous ?"}, {"class":"input"}, {"id":"how"}, {"name":"how"}]);
         const inputMessage = this.createMarkup("textarea", "", form, [{"type":"text"}, {"placeholder":"Message"}, {"class":"textarea"}, {"id":"message"}, {"name":"message"}]);
+        const button = this.createMarkup("button", "Envoyer", form, [{"type": "submit", "id": "formButton"}])
     }
 }
