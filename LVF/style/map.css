@@ -18,7 +18,22 @@
   filter: drop-shadow(0 0 4px dimgrey);
 }
 
-/* Le marker leaflet sur lequel on a cliqué */
+/* Animation du marker leaflet sur lequel on a cliqué */
 .pin-active {
-  
+  animation-name: floating;
+  animation-duration: .45s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes floating {
+  from {
+    margin-top: -49px;
+  }
+
+  to {
+    margin-top: -55px;
+  }
 }
