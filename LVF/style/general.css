@@ -117,3 +117,7 @@ section{
   font-size: 30px;
   text-align: center;
 }
+
+/*** CARTE INTERACTIVE ***/
+
+#map { height: 500px; }
