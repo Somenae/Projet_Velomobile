@@ -51,7 +51,6 @@ export default class footer extends ManageDom {
             aTab1[2].href = "./html/usines.html";
             aTab1[3].href = "./html/modeles.html";
             aTab1[4].href = "#";
-            console.log("Pouet1");
         }
         else {
             logo.src = "./../assets/imgs/lvf-logo+txt-alpha.png"
@@ -64,7 +63,6 @@ export default class footer extends ManageDom {
             aTab1[2].href = "./usines.html";
             aTab1[3].href = "./modeles.html";
             aTab1[4].href = "#";
-            console.log("Pouet2");
         }
     }
 }

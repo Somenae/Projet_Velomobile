@@ -1,33 +1,4 @@
-:root {
-    --blue: #0b0cac;
-    --red: #fd0808;
-    --black: #000;
-    --white: #fff;
-    --background: #ededed;
-  }
-  
-  html {
-    font-family: "Roboto", sans-serif;
-  }
-  body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: "Lobster Two", fantasy;
-  }
-  
-  h3 {
-    font-size: 1.5em;
-  }
-  body {
-    background-color: #ededed;
-  }
+
   .container-title {
     background-image: url("../assets/imgs/ouvrier.png");
     height: 100vh;
