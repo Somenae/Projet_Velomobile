@@ -1,19 +1,4 @@
-.container-title {
-  background-image: url("../assets/imgs/travailleur_velomobile.jpg");
-}
-
-/*** SECTION "GAMME UNIQUE DE VELOMOBILES" ***/
-
-.second-container h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  margin-bottom: 1em;
-}
-
-.second-container {
-  margin: auto;
-  max-width: 60em;
-}:root {
+:root {
     --blue: #0b0cac;
     --red: #fd0808;
     --black: #000;
@@ -44,7 +29,7 @@
     background-color: #ededed;
   }
   .container-title {
-    background-image: url("../assets/imgs/Absolute_Reality_v16_generate_designer_working_on_drawing_velo_2.jpg");
+    background-image: url("../assets/imgs/ouvrier.png");
     height: 100vh;
     background-size: cover;
     background-position: center;
