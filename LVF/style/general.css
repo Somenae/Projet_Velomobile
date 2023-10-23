@@ -1,14 +1,119 @@
 :root {
-  --blue: #0B0CAC;
-  --red: #FD0808;
+  --blue: #0b0cac;
+  --red: #fd0808;
   --black: #000;
   --white: #fff;
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Lobster Two', fantasy;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lobster Two", fantasy;
+}
+
+main {
+  background-color: #ededed;
+}
+.container-title {
+  background-image: url("/Diginamic/github/M07-DWWM/projetBobo-main/LVF/assets/imgs/LVF\ Q.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 0 10px;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+}
+
+.container-title h1 {
+  font-size: 80px;
+  color: var(--blue);
+  margin: 0 0 5px 0;
+  z-index: 1;
+}
+.container-title span {
+  color: var(--red);
+}
+
+.button-design {
+  width: 150px;
+  height: 50px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.6);
+  background-image: linear-gradient(180deg, white, white),
+  linear-gradient(180deg, var(--blue), var(--red));
+  border: 3px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  margin: 10px 0 0 0;
+  border-radius: 30px; 
+  font-size: 16px;  
+  cursor: pointer; 
+  
+}
+
+
+.container-title .overlay .verticalLine {
+  width: 250px;
+  border: 1px solid var(--red);
+  text-align: center;
+  margin: 10px auto;
+}
+
+.verticalLine {
+  width: 250px;
+  border: 1px solid var(--red);
+  text-align: center;
+  margin: 20px auto;
+}
+
+.horizontalLine {
+  width: 0;
+  height: 80px;
+  border-right: 2px solid var(--red);
+  margin: 10px auto;
+}
+section{
+  margin: 20px 0 20px 0;
+}
+.container-content {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.content-text {
+  margin: 50px 0 0 150px;
+  width: 400px;
+}
+.picture-content img {
+  width: 850px;
+  height: 500px;
+}
+
+.second-container h2 {
+  color: var(--blue);
+  font-size: 30px;
+  text-align: center;
 }

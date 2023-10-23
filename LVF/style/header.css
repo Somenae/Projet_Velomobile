@@ -1,11 +1,50 @@
-.navBar{
-  display: inline-flex;
+:root {
+  --blue: #0B0CAC;
+  --red: #FD0808;
+  --black: #000;
+  --white: #fff;
 }
 
-.navBar>a {
-  width: 60px;
-}
 
-.navBar img {
+header {
+  height: 100%;
   width: 100%;
 }
+.navbar .logo{
+  width: 50%;
+}
+#logo{
+  width: 150px;
+  height: 80px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.navbar a{
+text-decoration: none;
+color: black;
+}
+.navlinks ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lobster Two", fantasy;
+  font-size: 17px;
+}
+
+.navlinks ul li {
+  margin: 0 40px 0 0;
+
+}
+.navlinks ul li a {
+  color :var(--blue);
+}
+
+.active{
+  color: var(--red) !important;
+}
+
