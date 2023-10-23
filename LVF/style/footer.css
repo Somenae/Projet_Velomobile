@@ -38,3 +38,12 @@ footer {
   width: 180px;
   height: 130px;
 }
+
+@media screen and (max-width: 992px) {
+  .div-social-tab {
+    display: flex;
+  }
+  .div-social-tab img {
+    width: 100%;
+  }
+}
