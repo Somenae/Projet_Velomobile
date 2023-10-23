@@ -8,6 +8,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 
 body {
@@ -38,7 +39,7 @@ body {
 
 h2 {
   color: var(--blue);
-  font-size: 30px;
+  font-size: 2em;
   text-align: center;
   margin: 1em 0;
 }
@@ -69,7 +70,7 @@ h2 {
 }
 
 .container-title h1 {
-  font-size: 80px;
+  font-size: 4em;
   color: var(--blue);
   margin: 0 0 5px 0;
   z-index: 1;
@@ -82,7 +83,7 @@ h2 {
   width: 150px;
   height: 50px;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   background-image: linear-gradient(180deg, white, white),
     linear-gradient(180deg, var(--blue), var(--red));
   border: 3px solid transparent;
@@ -92,27 +93,25 @@ h2 {
   border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
+  transition: transform .1s ease-out;
 }
 
 .button-design:hover {
   transform: scale(1.1);
 }
 
-.container-title .overlay .verticalLine {
-  width: 250px;
-  border: 1px solid var(--red);
-  text-align: center;
-  margin: 10px auto;
-}
-
-.verticalLine {
+.horizontalLine {
   width: 250px;
   border: 1px solid var(--red);
   text-align: center;
   margin: 20px auto;
 }
 
-.horizontalLine {
+.container-title .overlay .horizontalLine {
+  margin: 10px auto;
+}
+
+.verticalLine {
   width: 0;
   height: 80px;
   border-right: 2px solid var(--red);
@@ -120,8 +119,9 @@ h2 {
 }
 
 section {
-  margin: 20px 0 20px 0;
+  margin: 2em 0;
 }
+
 /*Premiere section présentation*/
 .container-content {
   display: flex;
@@ -141,7 +141,7 @@ section {
   color: var(--blue);
   font-size: 30px;
   text-align: center;
-} */
+}
 /*Notre gamme unique*/ 
 .container-box {
   display: flex;
@@ -176,7 +176,7 @@ section {
   align-items: center;
   margin: 3.75rem 0 0 12.5rem;
 }
-/*section histoire/usine*/ 
+/*section histoire/usine*/
 .container-picture-three {
   text-align: center;
 }
@@ -209,15 +209,25 @@ form {
   margin: 0 auto;
   padding: 1.5em;
   border-radius: 1.5em;
+  background-color: var(--white);
 }
 form h3 {
   text-align: center;
   color: var(--blue);
   margin: 0 0 1em 0;
 }
+
+/* Cacher les labels sauf pour les Screen Readers */
 label {
-  display: none;
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
 }
+
 .div-form-container {
   display: flex;
   justify-content: space-between;
@@ -225,15 +235,16 @@ label {
   width: 100%;
 }
 .first-form-bloc,
-.second-form-bloc  {
+.second-form-bloc {
   margin: 0 auto;
   text-align: center;
   width: 100%;
 }
-.first-form-bloc input, .second-form-bloc input{
-  width:90%;
+.first-form-bloc input,
+.second-form-bloc input {
+  width: 91%;
   box-sizing: border-box;
-  margin: 0 0 1.25em 0 ;
+  margin: 0 0 1.8em 0;
 }
 
 input,
@@ -247,6 +258,7 @@ textarea {
 form .button-design {
   margin: 0 auto;
 }
+
 /*Media QUERIES*/
 
 @media screen and (max-width: 992px) {
@@ -314,8 +326,8 @@ form .button-design {
   .threeBis .container-content-three {
     order: 2;
   }
-  .div-form-container{
-    display:flex;
+  .div-form-container {
+    display: flex;
     flex-direction: column;
   }
 }

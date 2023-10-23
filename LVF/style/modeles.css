@@ -127,8 +127,6 @@
     height: 500px;
   }
   .second-container {
-    display:flex;
-    flex-direction: column;
     margin: 0 0 1.25rem 0;
   }
   .second-container h2 {
@@ -136,26 +134,25 @@
     font-size: 30px;
     text-align: center;
   }
-  /*Notre gamme unique*/ 
-.container-box {
+
+  .container-box {
     display: flex;
     justify-content: space-between;
     margin: 40px 0 0 0;
-   
- 
+    align-items: start;
   }
   .picture-content-one img {
     width: 43.75rem;
     height: 25rem;
     transform :scaleX(-1
-    )
+)
  
  
   }
   .content-about-one {
     display: flex;
     flex-direction: column;
- 
+    align-items: center;
     margin: 3.75rem 12.5rem 0 0;
   }
   .content-about-one ul li {
@@ -165,13 +162,13 @@
   .picture-content-two img {
     width: 43.75rem;
     height: 25rem;
-
+ 
   }
   
   .content-about-two {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
     margin: 3.75rem 0 0 12.5rem;
   }
   .container-picture-three {
