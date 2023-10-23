@@ -28,6 +28,7 @@ header {
 text-decoration: none;
 color: black;
 }
+
 .navlinks ul {
   display: flex;
   justify-content: space-between;
@@ -38,8 +39,8 @@ color: black;
 
 .navlinks ul li {
   margin: 0 40px 0 0;
-
 }
+
 .navlinks ul li a {
   color :var(--blue);
 }
@@ -48,3 +49,48 @@ color: black;
   color: var(--red) !important;
 }
 
+#icons{
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 650px){
+  #icons{
+    display: block;
+  }
+
+  #icons:before{
+    content: "\2630";
+    z-index: 9;
+  }
+
+  .activeBurger #icons:before{
+    content: "\2715";
+    z-index: 10;
+  }
+
+  nav ul{
+    z-index: 5;
+    position: fixed;
+    left: -100%;
+    top: 10%;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    transition: 0.25s;
+  }
+  
+  nav ul li{
+    width: 100%;
+    text-align: center;
+    padding: 3px 0;
+  }
+
+  nav li:hover{
+    background-color: rgb(15, 15, 15);
+  }
+
+  nav.activeBurger ul{
+    left: 0;
+  }
+}
