@@ -128,7 +128,7 @@ section {
   font-size: 30px;
   text-align: center;
 }
-/*Notre gamme unique*/ 
+/*Notre gamme unique*/
 .container-box {
   display: flex;
   justify-content: space-between;
@@ -162,7 +162,7 @@ section {
   align-items: center;
   margin: 3.75rem 0 0 12.5rem;
 }
-/*section histoire/usine*/ 
+/*section histoire/usine*/
 .container-picture-three {
   text-align: center;
 }
@@ -194,6 +194,7 @@ form {
   margin: 0 auto;
   padding: 1.5em;
   border-radius: 1.5em;
+  background-color: var(--white);
 }
 form h3 {
   text-align: center;
@@ -210,15 +211,16 @@ label {
   width: 100%;
 }
 .first-form-bloc,
-.second-form-bloc  {
+.second-form-bloc {
   margin: 0 auto;
   text-align: center;
   width: 100%;
 }
-.first-form-bloc input, .second-form-bloc input{
-  width:90%;
+.first-form-bloc input,
+.second-form-bloc input {
+  width: 91%;
   box-sizing: border-box;
-  margin: 0 0 1.25em 0 ;
+  margin: 0 0 1.8em 0;
 }
 
 input,
@@ -299,8 +301,8 @@ form .button-design {
   .threeBis .container-content-three {
     order: 2;
   }
-  .div-form-container{
-    display:flex;
+  .div-form-container {
+    display: flex;
     flex-direction: column;
   }
 }
