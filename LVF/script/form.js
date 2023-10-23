@@ -8,6 +8,7 @@ export default class contactForm extends ManageDom {
     render() {
         const formDiv = this.createMarkup("section", "", document.body, [{"class":"formulaire"}]);
         const form = this.createMarkup("form", "", formDiv);
+        const titleh3 = this.createMarkup("h3", "Contactez Nous !", form);
         const labelName = this.createMarkup("label", "Nom", form, [{"class":"label"}, {"for":"name"}]);
         const inputName = this.createMarkup("input", "", form, [{"type":"text"}, {"placeholder":"Nom"}, {"class":"input"}, {"id":"name"}, {"name":"name"}]);
         const labelFirstName = this.createMarkup("label", "Prénom", form, [{"class":"label"}, {"for":"firstName"}]);
@@ -19,6 +20,6 @@ export default class contactForm extends ManageDom {
         const labelHow = this.createMarkup("label", "Comment avez-vous entendu parler de nous ?", form, [{"class":"label"}, {"for":"how"}]);
         const inputHow = this.createMarkup("input", "", form, [{"type":"text"}, {"placeholder":"Comment avez-vous entendu parler de nous ?"}, {"class":"input"}, {"id":"how"}, {"name":"how"}]);
         const inputMessage = this.createMarkup("textarea", "", form, [{"type":"text"}, {"placeholder":"Message"}, {"class":"textarea"}, {"id":"message"}, {"name":"message"}]);
-        const button = this.createMarkup("button", "Envoyer", form, [{"type": "submit", "id": "formButton"}])
+        const button = this.createMarkup("button", "Envoyer", form, [{"class":"button-design"},{"type": "submit", "id": "formButton"}])
     }
 }
