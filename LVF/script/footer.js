@@ -30,7 +30,7 @@ export default class footer extends ManageDom {
         aTab[2].innerText = "Notre atelier";
         aTab[3].innerText = "Nos Vélomobiles";
         aTab[4].innerText = "Contactez-nous";
-        aTab[0].href = "./index.html";
+        aTab[0].href = "./LVF/index.html";
         aTab[1].href = "./html/histoire.html";
         aTab[2].href = "./html/usines.html";
         aTab[3].href = "./html/modeles.html";
@@ -42,6 +42,7 @@ export default class footer extends ManageDom {
             socialTab[i] = this.createMarkup("img", "", aTab[i]);
             i++;
         }
+        
         console.log(window.location.href);
         if(window.location.href === "http://127.0.0.1:5500/projetBobo/LVF/index.html"){
             socialTab[0].src = "./assets/imgs/facebook-f.svg";

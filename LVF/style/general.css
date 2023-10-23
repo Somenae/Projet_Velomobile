@@ -3,6 +3,7 @@
   --red: #fd0808;
   --black: #000;
   --white: #fff;
+  --background: #ededed;
 }
 
 html {
@@ -21,9 +22,15 @@ h4 {
   font-family: "Lobster Two", fantasy;
 }
 
-main {
+h3 {
+  font-size: 1.5em;
+}
+body {
   background-color: #ededed;
 }
+
+/*Premiere section */
+
 .container-title {
   background-image: url("../assets/imgs/LVF\ Q.jpg");
   height: 100vh;
@@ -32,7 +39,7 @@ main {
   position: relative;
   margin: 0 0 10px;
 }
-
+/*filtre eclaircissant*/
 .overlay {
   display: flex;
   justify-content: center;
@@ -73,6 +80,10 @@ main {
   cursor: pointer;
 }
 
+.button-design:hover {
+  transform: scale(1.1);
+}
+
 .container-title .overlay .verticalLine {
   width: 250px;
   border: 1px solid var(--red);
@@ -93,9 +104,11 @@ main {
   border-right: 2px solid var(--red);
   margin: 10px auto;
 }
+
 section {
   margin: 20px 0 20px 0;
 }
+/*Premiere section présentation*/
 .container-content {
   display: flex;
   justify-content: space-between;
@@ -115,6 +128,7 @@ section {
   font-size: 30px;
   text-align: center;
 }
+/*Notre gamme unique*/ 
 .container-box {
   display: flex;
   justify-content: space-between;
@@ -135,6 +149,7 @@ section {
 .content-about-one ul li {
   text-align: end;
 }
+
 .picture-content-two img {
   width: 43.75rem;
   height: 25rem;
@@ -147,10 +162,11 @@ section {
   align-items: center;
   margin: 3.75rem 0 0 12.5rem;
 }
+/*section histoire/usine*/ 
 .container-picture-three {
   text-align: center;
 }
-.container-picture-three h3{
+.container-picture-three h3 {
   color: var(--blue);
   margin: 0 0 1.5rem 0;
 }
@@ -166,4 +182,125 @@ section {
   justify-content: center;
   align-items: center;
   text-align: justify;
+}
+/*formulaire*/
+
+form {
+  border: 2px solid var(--blue);
+  display: flex;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1.5em;
+  border-radius: 1.5em;
+}
+form h3 {
+  text-align: center;
+  color: var(--blue);
+  margin: 0 0 1em 0;
+}
+label {
+  display: none;
+}
+.div-form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.first-form-bloc,
+.second-form-bloc  {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.first-form-bloc input, .second-form-bloc input{
+  width:90%;
+  box-sizing: border-box;
+  margin: 0 0 1.25em 0 ;
+}
+
+input,
+textarea {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  border: 2px solid var(--red);
+}
+
+form .button-design {
+  margin: 0 auto;
+}
+/*Media QUERIES*/
+
+@media screen and (max-width: 992px) {
+  .container-title {
+    width: 100%;
+    height: 50vh;
+  }
+  .container-title h1 {
+    font-size: 2.3em;
+  }
+  .container-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-text {
+    margin: 10px auto;
+    width: 70%;
+    text-align: justify;
+  }
+  .picture-content-title img {
+    width: 100%;
+    height: auto;
+  }
+  .picture-content-one img {
+    width: 100%;
+    height: auto;
+  }
+  .content-about-one .button-design {
+    margin: 1em 0 0 1em;
+  }
+  .content-about-two .button-design {
+    margin: 1em 1em 0 0;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .content-about-one {
+    margin: 0 1em 0 0;
+  }
+  .content-about-two {
+    margin: 0 0 0 1em;
+  }
+  .picture-content-two img {
+    width: 100%;
+    height: auto;
+  }
+  .container-picture-three img {
+    width: 100%;
+    height: auto;
+  }
+  .three {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-content-three {
+    margin: 1em auto;
+  }
+  .threeBis {
+    display: flex;
+    flex-direction: column;
+  }
+  .threeBis .container-picture-three {
+    order: 1;
+  }
+  .threeBis .container-content-three {
+    order: 2;
+  }
+  .div-form-container{
+    display:flex;
+    flex-direction: column;
+  }
 }
