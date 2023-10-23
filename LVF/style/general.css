@@ -93,14 +93,13 @@ h2 {
   border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
-  transition: transform .1s ease-out;
+  transition: transform 0.1s ease-out;
 }
 
- .button-design {
+.button-design {
   width: 140px;
   height: 50px;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.8);
   background-image: linear-gradient(180deg, white, white),
     linear-gradient(180deg, var(--blue), var(--red));
   border: 3px solid transparent;
@@ -110,7 +109,7 @@ h2 {
   border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
-  transition: transform .1s ease-out;
+  transition: transform 0.1s ease-out;
 }
 
 .button-design:hover {
@@ -157,7 +156,7 @@ section {
   font-size: 30px;
   text-align: center;
 }
-/*Notre gamme unique*/ 
+/*Notre gamme unique*/
 .container-box {
   display: flex;
   justify-content: space-between;
@@ -174,11 +173,24 @@ section {
   flex-direction: column;
   align-items: center;
   margin: 3.75rem 12.5rem 0 0;
-}
-.content-about-one ul li {
-  text-align: end;
+  background-color: var(--white);
+  padding:1.5em;
+  border-radius: 10% 20% 10% 20%;
+  box-shadow: var(--blue) 0px 2px 5px -1px, var(--blue) 0px 1px 3px -1px;
+  transition: transform 0.1s ease-out;
 }
 
+.content-about-one:hover {
+  transform: scale(1.1);
+}
+
+.content-about-one ul li {
+  text-align: center;
+  margin: 0.5em 0 0 0;
+}
+.active-blue{
+  color:var(--blue);
+}
 .picture-content-two img {
   width: 43.75rem;
   height: 25rem;
@@ -190,7 +202,20 @@ section {
   flex-direction: column;
   align-items: center;
   margin: 3.75rem 0 0 12.5rem;
+  background-color: var(--white);
+  padding:1.5em;
+  border-radius: 20% 10% 20% 10%;
+  transition: transform 0.1s ease-out;
+  box-shadow: var(--red) 0px 2px 5px -1px, var(--red) 0px 1px 3px -1px;
 }
+.content-about-two:hover{
+  transform: scale(1.1);
+}
+.content-about-two ul li{
+  text-align: center;
+  margin: 0.5em 0 0 0;
+}
+
 /*section histoire/usine*/
 .container-picture-three {
   text-align: center;
@@ -213,23 +238,22 @@ section {
   text-align: justify;
 }
 
-
 /* carousel */
-.text-title{
+.text-title {
   margin: 3em 0 0 4em;
 }
-#carousel{
+#carousel {
   width: 100%;
-  max-width: 50em; 
+  max-width: 50em;
 }
 
-#carousel img{
+#carousel img {
   width: 100%;
- 
+
   /* height: 100%; */
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -254,12 +278,12 @@ form h3 {
 
 /* Cacher les labels sauf pour les Screen Readers */
 label {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
 
@@ -330,12 +354,10 @@ form .button-design {
   h3 {
     font-size: 1em;
   }
-  .content-about-one {
-    margin: 0 1em 0 0;
+  .content-about-one, .content-about-two {
+    margin: 0 1em 0 1em;
   }
-  .content-about-two {
-    margin: 0 0 0 1em;
-  }
+  
   .picture-content-two img {
     width: 100%;
     height: auto;
