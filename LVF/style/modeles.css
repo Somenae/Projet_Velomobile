@@ -1,4 +1,19 @@
-:root {
+.container-title {
+  background-image: url("../assets/imgs/travailleur_velomobile.jpg");
+}
+
+/*** SECTION "GAMME UNIQUE DE VELOMOBILES" ***/
+
+.second-container h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.second-container {
+  margin: auto;
+  max-width: 60em;
+}:root {
     --blue: #0b0cac;
     --red: #fd0808;
     --black: #000;
