@@ -30,7 +30,7 @@ export default class footer extends ManageDom {
         aTab[2].innerText = "Notre atelier";
         aTab[3].innerText = "Nos Vélomobiles";
         aTab[4].innerText = "Contactez-nous";
-        aTab[0].href = "./index.html";
+        aTab[0].href = "./LVF/index.html";
         aTab[1].href = "./html/histoire.html";
         aTab[2].href = "./html/usines.html";
         aTab[3].href = "./html/modeles.html";
@@ -42,9 +42,9 @@ export default class footer extends ManageDom {
             socialTab[i] = this.createMarkup("img", "", aTab[i]);
             i++;
         }
-        socialTab[0].src = "./assets/imgs/facebook-f.svg";
-        socialTab[1].src = "./assets/imgs/instagram.svg";
-        socialTab[2].src = "./assets/imgs/youtube.svg";
-        socialTab[3].src = "./assets/imgs/dailymotion.svg";
+        socialTab[0].src = "./../assets/imgs/facebook-f.svg";
+        socialTab[1].src = "./../assets/imgs/instagram.svg";
+        socialTab[2].src = "./../assets/imgs/youtube.svg";
+        socialTab[3].src = "./../assets/imgs/dailymotion.svg";
     }
 }
