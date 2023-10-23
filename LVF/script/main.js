@@ -1,3 +1,4 @@
+import footer from "./footer.js";
 import contactForm from "./form.js";
 
 new contactForm();
@@ -13,3 +14,5 @@ burger.onclick = () => {
         nav.classList.add("activeBurger");
     }
 }
+
+new footer();

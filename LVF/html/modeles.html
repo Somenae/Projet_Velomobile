@@ -3,26 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="../style/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">       
-    <link rel="stylesheet" href="./style/general.css">
-    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="../style/general.css">
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/map.css">
+    <!-- Lib Leaflet.js (carte interactive) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script type="module" src="../script/map.js" defer></script>
+    <script src="../script/main.js" type="module" defer></script>
+
     <title>Le Vélomobile Français - Accueil</title>
 </head>
 <body>
-    <header class="navBar">
-        <a href="#"><img src="./assets/imgs/logo full svg.svg" alt="Logo Le Vélomobile Français" title="Logo LVF"></a>
-        <nav>
-            <a href="#">Accueil</a>
-            <a href="#">Notre histoire</a>
-            <a href="#">Notre atelier</a>
-            <a href="#">Nos Vélomobiles</a>
-            <a href="#">Contactez-nous</a>
+    <header>
+        <nav class="navbar" id="navbar">
+          <a href="../index.html" class="logo"
+            ><img
+              src="../assets/imgs/lvf-logo+txt.svg"
+              alt="Logo Le Vélomobile Français"
+              title="Logo LVF"
+              id="logo"
+          /></a>
+          <div class="navlinks">
+            <ul>
+              <li><a href="../index.html">Accueil</a></li>
+              <li><a href="./histoire.html" >Notre histoire</a></li>
+              <li><a href="./usines.html">Notre atelier</a></li>
+              <li><a href="#" class="active">Nos Vélomobiles</a></li>
+              <li><a href="#contact">Contactez-nous</a></li>
+            </ul>
+          </div>
+          <div id="icons"></div>
         </nav>
-    </header>
+      </header>
     <main>
+        <div class="container-title">
+            <div class="overlay">
+              <h1 class="active">Nos Vélomobiles</h1>
+              <a href="#"></a>
+            </div>
+        </div>
+        <div id="map">
+            <!-- La carte intéractive vient ici -->
+        </div>
     </main>
     <footer></footer>
 </body>

@@ -6,7 +6,7 @@ export default class contactForm extends ManageDom {
         this.render();
     }
     render() {
-        const formDiv = this.createMarkup("section", "", document.body, [{"class":"formulaire"}]);
+        const formDiv = this.createMarkup("section", "", document.body, [{"class":"formulaire"}, {"id":"contact"}]);
         const form = this.createMarkup("form", "", formDiv);
         const titleh3 = this.createMarkup("h3", "Contactez Nous !", form);
         const labelName = this.createMarkup("label", "Nom", form, [{"class":"label"}, {"for":"name"}]);

@@ -11,9 +11,11 @@ header {
   width: 100%;
   background-color: var(--white);
 }
+
 .navbar .logo{
   width: 50%;
 }
+
 #logo{
   width: 150px;
   height: 80px;
