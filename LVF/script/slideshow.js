@@ -9,11 +9,9 @@ export default class slideShow extends ManageDom {
    * @param {number} height
    * @param {number} speed
    */
-  constructor(nb_images, imagesArray, width, height, speed) {
+  constructor(nb_images, imagesArray, speed) {
     super();
     this.nb_images = nb_images;
-    this.width = width;
-    this.height = height;
     this.speed = speed;
     this.imagesArray = imagesArray
     this.domElement = this.render();
@@ -22,12 +20,14 @@ export default class slideShow extends ManageDom {
 
   render() {
     /* Création de la div sur laquelle sera attachée le carousel, possible de créer la div en html pour placer le carousel où vous voulez et donc de changer le let ici */
-    let imgDiv = this.createMarkup("div", "", document.body); 
+    let imgDiv = document.getElementById("carousel");
     for (let i = 0; i < this.nb_images; i++) {
       if (i === 0) {
-        this.createMarkup("img", "", imgDiv, [{ src: this.imagesArray[i].src, id: `${i}Child` }]);
+        this.createMarkup("img", "", imgDiv, [{ src: this.imagesArray[i], id: `${i}Child` }]);
+        console.log("Pouet1");
       } else {
-        this.createMarkup("img", "", imgDiv, [{ src: this.imagesArray[i].src, class: `hidden`, id: `${i}Child` }]);
+        this.createMarkup("img", "", imgDiv, [{ src: this.imagesArray[i], class: `hidden`, id: `${i}Child` }]);
+        console.log("Pouet2");
       }
     }
     return { imgDiv };

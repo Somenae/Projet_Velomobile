@@ -1,8 +1,8 @@
-import slideShow from "./slideshow";
+import slideShow from "./slideshow.js";
 
 let tabImages = [];
-tabImages[0] = "";
-tabImages[1] = "";
-tabImages[2] = "";
-tabImages[3] = "";
-new slideShow(4, tabImages, 100, 100, 5000);
+tabImages[0] = "./../assets/imgs/mec-sur-velom.jpg";
+tabImages[1] = "./../assets/imgs/duo-velom.jpg";
+tabImages[2] = "./../assets/imgs/garrigue.jpg";
+tabImages[3] = "./../assets/imgs/magasin.jpg";
+new slideShow(4, tabImages, 5000);
