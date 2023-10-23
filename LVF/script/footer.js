@@ -42,9 +42,18 @@ export default class footer extends ManageDom {
             socialTab[i] = this.createMarkup("img", "", aTab[i]);
             i++;
         }
-        socialTab[0].src = "./assets/imgs/facebook-f.svg";
-        socialTab[1].src = "./assets/imgs/instagram.svg";
-        socialTab[2].src = "./assets/imgs/youtube.svg";
-        socialTab[3].src = "./assets/imgs/dailymotion.svg";
+        console.log(window.location.href);
+        if(window.location.href === "http://127.0.0.1:5500/projetBobo/LVF/index.html"){
+            socialTab[0].src = "./assets/imgs/facebook-f.svg";
+            socialTab[1].src = "./assets/imgs/instagram.svg";
+            socialTab[2].src = "./assets/imgs/youtube.svg";
+            socialTab[3].src = "./assets/imgs/dailymotion.svg";
+        }
+        else {
+            socialTab[0].src = "./assets/imgs/facebook-f.svg";
+            socialTab[1].src = "./assets/imgs/instagram.svg";
+            socialTab[2].src = "./assets/imgs/youtube.svg";
+            socialTab[3].src = "./assets/imgs/dailymotion.svg";
+        }
     }
 }
