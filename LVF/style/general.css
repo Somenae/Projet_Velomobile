@@ -215,14 +215,17 @@ section {
 
 
 /* carousel */
-
+.text-title{
+  margin: 3em 0 0 4em;
+}
 #carousel{
   width: 100%;
-  max-width: 50em;
+  max-width: 50em; 
 }
 
 #carousel img{
   width: 100%;
+ 
   /* height: 100%; */
 }
 
