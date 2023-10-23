@@ -77,6 +77,10 @@ body {
   cursor: pointer;
 }
 
+.button-design:hover {
+  transform: scale(1.1);
+}
+
 .container-title .overlay .verticalLine {
   width: 250px;
   border: 1px solid var(--red);
@@ -191,6 +195,24 @@ form h3 {
 label {
   display: none;
 }
+.div-form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.first-form-bloc,
+.second-form-bloc  {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.first-form-bloc input, .second-form-bloc input{
+  width:90%;
+  box-sizing: border-box;
+  margin: 0 0 1.25em 0 ;
+}
+
 input,
 textarea {
   margin: 1em;
@@ -209,7 +231,7 @@ form .button-design {
     height: 50vh;
   }
   .container-title h1 {
-    font-size: 3em;
+    font-size: 2.3em;
   }
   .container-content {
     display: flex;
@@ -251,21 +273,25 @@ form .button-design {
     width: 100%;
     height: auto;
   }
-  .three{
+  .three {
     display: flex;
     flex-direction: column;
   }
-  .container-content-three{
+  .container-content-three {
     margin: 1em auto;
   }
   .threeBis {
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
-  .threeBis .container-picture-three{
-    order:1;
+  .threeBis .container-picture-three {
+    order: 1;
   }
-  .threeBis .container-content-three{
-    order: 2; 
+  .threeBis .container-content-three {
+    order: 2;
+  }
+  .div-form-container{
+    display:flex;
+    flex-direction: column;
   }
 }
