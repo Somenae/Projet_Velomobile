@@ -20,10 +20,23 @@ export default class Marker {
       popupAnchor: [0, -55]
       });
     this.mark = this.render();
+    this.eventHandler();
   }
 
   render() {
     let marker =  L.marker(this.xy, {icon: this.icon}).addTo(this.map);
     return marker.bindPopup(`<h4>${this.popupHeader}</h4><p>${this.popupTxt}</p>`);
+  }
+
+  eventHandler() {
+    //console.log(this.mark._icon.classList);
+    
+    this.mark.on('click', (e) => {
+      let markers = document.querySelectorAll(".leaflet-marker-icon");
+      for (const marker of markers) {
+        marker.classList.remove("pin-active");
+      }
+      this.mark._icon.classList.add("pin-active");
+    })
   }
 }
