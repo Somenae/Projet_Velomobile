@@ -3,6 +3,7 @@
   --red: #fd0808;
   --black: #000;
   --white: #fff;
+  --background: #ededed;
 }
 
 html {
@@ -21,7 +22,10 @@ h4 {
   font-family: "Lobster Two", fantasy;
 }
 
-main {
+h3 {
+  font-size: 1.5em;
+}
+body {
   background-color: #ededed;
 }
 .container-title {
@@ -135,6 +139,7 @@ section {
 .content-about-one ul li {
   text-align: end;
 }
+
 .picture-content-two img {
   width: 43.75rem;
   height: 25rem;
@@ -150,7 +155,7 @@ section {
 .container-picture-three {
   text-align: center;
 }
-.container-picture-three h3{
+.container-picture-three h3 {
   color: var(--blue);
   margin: 0 0 1.5rem 0;
 }
@@ -166,4 +171,101 @@ section {
   justify-content: center;
   align-items: center;
   text-align: justify;
+}
+
+form {
+  border: 2px solid var(--blue);
+  display: flex;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1.5em;
+  border-radius: 1.5em;
+}
+form h3 {
+  text-align: center;
+  color: var(--blue);
+  margin: 0 0 1em 0;
+}
+label {
+  display: none;
+}
+input,
+textarea {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  border: 2px solid var(--red);
+}
+
+form .button-design {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .container-title {
+    width: 100%;
+    height: 50vh;
+  }
+  .container-title h1 {
+    font-size: 3em;
+  }
+  .container-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-text {
+    margin: 10px auto;
+    width: 70%;
+    text-align: justify;
+  }
+  .picture-content-title img {
+    width: 100%;
+    height: auto;
+  }
+  .picture-content-one img {
+    width: 100%;
+    height: auto;
+  }
+  .content-about-one .button-design {
+    margin: 1em 0 0 1em;
+  }
+  .content-about-two .button-design {
+    margin: 1em 1em 0 0;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .content-about-one {
+    margin: 0 1em 0 0;
+  }
+  .content-about-two {
+    margin: 0 0 0 1em;
+  }
+  .picture-content-two img {
+    width: 100%;
+    height: auto;
+  }
+  .container-picture-three img {
+    width: 100%;
+    height: auto;
+  }
+  .three{
+    display: flex;
+    flex-direction: column;
+  }
+  .container-content-three{
+    margin: 1em auto;
+  }
+  .threeBis {
+    display:flex;
+    flex-direction: column;
+  }
+  .threeBis .container-picture-three{
+    order:1;
+  }
+  .threeBis .container-content-three{
+    order: 2; 
+  }
 }
