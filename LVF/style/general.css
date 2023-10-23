@@ -28,6 +28,9 @@ h3 {
 body {
   background-color: #ededed;
 }
+
+/*Premiere section */
+
 .container-title {
   background-image: url("../assets/imgs/LVF\ Q.jpg");
   height: 100vh;
@@ -36,7 +39,7 @@ body {
   position: relative;
   margin: 0 0 10px;
 }
-
+/*filtre eclaircissant*/
 .overlay {
   display: flex;
   justify-content: center;
@@ -101,9 +104,11 @@ body {
   border-right: 2px solid var(--red);
   margin: 10px auto;
 }
+
 section {
   margin: 20px 0 20px 0;
 }
+/*Premiere section présentation*/
 .container-content {
   display: flex;
   justify-content: space-between;
@@ -123,6 +128,7 @@ section {
   font-size: 30px;
   text-align: center;
 }
+/*Notre gamme unique*/ 
 .container-box {
   display: flex;
   justify-content: space-between;
@@ -156,6 +162,7 @@ section {
   align-items: center;
   margin: 3.75rem 0 0 12.5rem;
 }
+/*section histoire/usine*/ 
 .container-picture-three {
   text-align: center;
 }
@@ -176,6 +183,7 @@ section {
   align-items: center;
   text-align: justify;
 }
+/*formulaire*/
 
 form {
   border: 2px solid var(--blue);
@@ -224,6 +232,7 @@ textarea {
 form .button-design {
   margin: 0 auto;
 }
+/*Media QUERIES*/
 
 @media screen and (max-width: 992px) {
   .container-title {
