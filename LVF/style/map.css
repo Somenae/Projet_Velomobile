@@ -1,5 +1,11 @@
 /*** CARTE INTERACTIVE ***/
 
+.map-section {
+  width: 100%;
+  max-width: 60em;
+  margin: auto;
+}
+
 #map { 
   height: 500px;
   width: 100%;
