@@ -52,7 +52,7 @@ h2 {
   background-size: cover;
   background-position: center;
   position: relative;
-  margin: 0 0 10px;
+  margin: 0 0 2.5em;
 }
 /*filtre eclaircissant*/
 .overlay {
@@ -79,8 +79,25 @@ h2 {
   color: var(--red);
 }
 
-.button-design {
-  width: 150px;
+.overlay .button-design {
+  width: 180px;
+  height: 60px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(180deg, white, white),
+    linear-gradient(180deg, var(--blue), var(--red));
+  border: 3px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  margin: 1.75rem 0 0 0;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform .1s ease-out;
+}
+
+ .button-design {
+  width: 140px;
   height: 50px;
   z-index: 1;
   background: rgba(255, 255, 255, 0.8);
@@ -104,7 +121,7 @@ h2 {
   width: 250px;
   border: 1px solid var(--red);
   text-align: center;
-  margin: 20px auto;
+  margin: 3em auto;
 }
 
 .container-title .overlay .horizontalLine {
@@ -119,7 +136,7 @@ h2 {
 }
 
 section {
-  margin: 2em 0;
+  margin: 2em 0 2em 0;
 }
 
 /*Premiere section présentation*/
@@ -134,9 +151,7 @@ section {
   width: 850px;
   height: 500px;
 }
-.second-container {
-  margin: 0 0 1.25rem 0;
-}
+
 /* .second-container h2 {
   color: var(--blue);
   font-size: 30px;
@@ -197,6 +212,7 @@ section {
   align-items: center;
   text-align: justify;
 }
+
 
 /* carousel */
 
