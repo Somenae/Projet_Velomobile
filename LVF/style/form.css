@@ -1,0 +1,67 @@
+/*formulaire*/
+
+form {
+  border: 2px solid var(--blue);
+  display: flex;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1.5em;
+  border-radius: 1.5em;
+  background-color: var(--white);
+}
+form h3 {
+  text-align: center;
+  color: var(--blue);
+  margin: 0 0 1em 0;
+}
+
+/* Cacher les labels sauf pour les Screen Readers */
+label {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.div-form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.first-form-bloc,
+.second-form-bloc {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.first-form-bloc input,
+.second-form-bloc input {
+  width: 91%;
+  box-sizing: border-box;
+  margin: 0 0 1.8em 0;
+}
+
+input,
+textarea {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  border: 2px solid var(--red);
+}
+
+form .button-design {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .div-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
