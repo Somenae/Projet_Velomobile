@@ -2,8 +2,6 @@
   background-image: url("../assets/imgs/travailleur_velomobile.jpg");
 }
 
-
-
 /* carousel */
 .text-title {
   margin: 3em 0 0 4em;
@@ -33,4 +31,3 @@
 .container-carousel{
   flex-direction: column;
 }
-
