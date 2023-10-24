@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    margin: 0 0 10px;
+    margin: 0 0 2.5em;
   }
   
   .picture-content-one img {
@@ -14,7 +14,6 @@
   }
  
  
-  
   
   @media screen and (max-width: 992px) {
     .container-title {
@@ -82,3 +81,5 @@
       order: 2; 
     }
   }
+
+  
