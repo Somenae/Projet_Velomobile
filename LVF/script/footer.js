@@ -69,7 +69,7 @@ export default class footer extends ManageDom {
       aTab1[3].href = "./html/modeles.html";
       aTab1[4].href = "#contact";
     } else {
-      logo.src = "./../assets/imgs/lvf-logo+txt-alpha.png";
+      logo.src = "./../assets/imgs/logo.png";
       socialTab[0].src = "./../assets/imgs/facebook-f.svg";
       socialTab[1].src = "./../assets/imgs/instagram.svg";
       socialTab[2].src = "./../assets/imgs/youtube.svg";

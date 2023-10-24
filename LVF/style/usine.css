@@ -298,8 +298,8 @@ form .button-design {
     width: 100%;
     height: auto;
   }
-  .container-box {
-    display: flex;
+  .container-box{
+    display:flex;
     flex-direction: column;
   }
   .container-picture-three img {
