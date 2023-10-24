@@ -45,6 +45,20 @@ footer {
   height: 80px;
 }
 
+/* couleurs icones */
+
+.icon0{
+  filter: invert(70%) sepia(55%) saturate(6953%) hue-rotate(179deg) brightness(104%) contrast(97%);
+}
+
+.icon2{
+  filter: invert(18%) sepia(77%) saturate(6926%) hue-rotate(15deg) brightness(103%) contrast(110%);
+}
+
+.icon3{
+  filter: invert(24%) sepia(55%) saturate(3353%) hue-rotate(202deg) brightness(102%) contrast(101%);
+}
+
 @media screen and (max-width: 992px) {
   .div-social-tab {
     display: flex;

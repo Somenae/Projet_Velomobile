@@ -52,7 +52,7 @@ export default class footer extends ManageDom {
     aTab1[4].innerText = "Contactez-nous";
     i = 0;
     while (i < 4) {
-      aTab2[i] = this.createMarkup("a", "", divIconTab);
+      aTab2[i] = this.createMarkup("a", "", divIconTab, [{"class": `icon${i}`}]);
       socialTab[i] = this.createMarkup("img", "", aTab2[i]);
       i++;
     }
