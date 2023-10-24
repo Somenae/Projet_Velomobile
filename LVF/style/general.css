@@ -33,9 +33,17 @@ body {
   background-color: var(--background);
 }
 
-/*Image qui prend toue la largeur*/
+/*Image qui prend toute la largeur*/
 .wide {
   width: 100%;
+}
+.img-cover {
+  object-fit: cover;
+}
+
+/*Image inversée*/
+.flipped {
+  transform: scaleX(-1);
 }
 
 h2 {
@@ -143,20 +151,17 @@ section {
 .container-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .content-text {
-  margin: 50px 0 0 150px;
+  padding: 2em;
 }
 .picture-content-title img {
   width: 850px;
   height: 500px;
 }
 
-/* .second-container h2 {
-  color: var(--blue);
-  font-size: 30px;
-  text-align: center;
-}
+
 /*Notre gamme unique*/
 .container-box {
   display: flex;
@@ -180,7 +185,6 @@ section {
   box-shadow: var(--blue) 0px 2px 5px -1px, var(--blue) 0px 1px 3px -1px;
   transition: transform 0.1s ease-out;
 }
-
 
 
 .content-about-one ul li {
@@ -336,6 +340,8 @@ form .button-design {
     transform: translateY(0px);
   }
 }
+
+
 /*Media QUERIES*/
 
 @media screen and (max-width: 992px) {
@@ -436,11 +442,19 @@ form .button-design {
   body {
     font-size: 1.2em;
   }
+
+  .content-text {
+    padding: 1em;
+  }
  }
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
   body {
     font-size: 1.25em;
+  }
+
+  .content-text {
+    padding: 2em;
   }
  } 

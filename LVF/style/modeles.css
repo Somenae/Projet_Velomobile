@@ -10,7 +10,6 @@
 .picture-content-one img {
   width: 43.75rem;
   height: 25rem;
-  transform: scaleX(-1);
 }
 
 /* carousel */
