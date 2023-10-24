@@ -15,7 +15,7 @@ export default class footer extends ManageDom {
       { class: "div-logo" },
     ]);
     const logo = this.createMarkup("img", "", divLogo, [
-      { src: "./assets/imgs/lvf-logo+txt-alpha.png" },
+      { src: "./assets/imgs/logo.png" },
     ]);
     const nav = this.createMarkup("nav", "", divContainer, [
       { class: "ul-box" },
@@ -82,19 +82,15 @@ export default class footer extends ManageDom {
     switch(currentUrl.replace("/projetBobo/", "")) {
         case "LVF/index.html" :
             aTab1[0].classList.add("active");
-            console.log("Pouet1");
             break;
         case "LVF/html/histoire.html" :
             aTab1[1].classList.add("active");
-            console.log("Pouet2");
             break;
         case "LVF/html/usines.html" :
             aTab1[2].classList.add("active");
-            console.log("Pouet3");
             break;
         case "LVF/html/modeles.html" :
             aTab1[3].classList.add("active");
-            console.log("Pouet4");
             break;
     }
   }
