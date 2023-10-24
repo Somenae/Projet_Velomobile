@@ -17,11 +17,14 @@ footer {
   align-items: center;
 }
 .ul-box {
-  margin: 0 0 0 8.5em;
+  margin: 0 0 0 3.5em;
   text-align: center;
   font-family: 'Lobster two', sans-serif;
 }
-
+.div-title-tab h3{
+  margin: 0 0 0.5em 0;
+  color : var(--red);
+}
 .ul-box ul li a {
   text-decoration: none;
   color: var(--blue);
@@ -29,10 +32,12 @@ footer {
 .div-social-tab {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
+
 .div-social-tab img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin: 0 1em 0 0;
 }
 .div-logo img {
@@ -44,8 +49,14 @@ footer {
   .div-social-tab {
     display: flex;
     margin: 0 1em 0 0;
+    
   }
   .div-social-tab img {
     width: 100%;
   }
+  .div-icon-tab{
+    display:flex;
+    flex-direction: row;
+  }
+
 }
