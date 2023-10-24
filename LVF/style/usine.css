@@ -357,9 +357,21 @@ form .button-design {
     font-size: 1.25em;
   }
 }
-
+/*Ecran Antho*/
 @media only screen and (max-width: 1400px) {
   body {
     font-size: 1em;
+  }
+  .picture-content-title img {
+    width: 700px;
+    height: 500px;
+  }
+  .picture-content-two img {
+    width: 700px;
+    height: 500px;
+  }
+  .container-picture-three img {
+    width: 700px;
+    height: 500px;
   }
 }
