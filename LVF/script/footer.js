@@ -83,16 +83,16 @@ export default class footer extends ManageDom {
     console.log(currentUrl.search("LVF/html/histoire.html"));
     console.log(currentUrl.search("LVF/html/usines.html"));
     console.log(currentUrl.search("LVF/html/modeles.html"));
-    if (currentUrl.search("LVF/index.html") == 12) {
+    if (currentUrl.search("LVF/index.html") != -1) {
         aTab1[0].classList.add("active")
     }
-    if (currentUrl.search("LVF/html/histoire.html") == 12) {
+    if (currentUrl.search("LVF/html/histoire.html") != -1) {
         aTab1[1].classList.add("active")
     }
-    if (currentUrl.search("LVF/html/usines.html") == 12) {
+    if (currentUrl.search("LVF/html/usines.html") != -1) {
         aTab1[2].classList.add("active")
     }
-    if (currentUrl.search("LVF/html/modeles.html") == 12) {
+    if (currentUrl.search("LVF/html/modeles.html") != -1) {
         aTab1[3].classList.add("active")
     }
   }
