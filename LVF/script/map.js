@@ -6,7 +6,8 @@ let map = L.map('map').setView([43.8, 3.8865], 7);
 
 // On ajoute les tiles sur la map
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 19,
+  minZoom: 7,
+  maxZoom: 7,
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 

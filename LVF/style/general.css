@@ -9,6 +9,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -32,9 +33,17 @@ body {
   background-color: var(--background);
 }
 
-/*Image qui prend toue la largeur*/
+/*Image qui prend toute la largeur*/
 .wide {
   width: 100%;
+}
+.img-cover {
+  object-fit: cover;
+}
+
+/*Image inversée*/
+.flipped {
+  transform: scaleX(-1);
 }
 
 h2 {
@@ -142,20 +151,17 @@ section {
 .container-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .content-text {
-  margin: 50px 0 0 150px;
+  padding: 2em;
 }
 .picture-content-title img {
   width: 850px;
   height: 500px;
 }
 
-/* .second-container h2 {
-  color: var(--blue);
-  font-size: 30px;
-  text-align: center;
-}
+
 /*Notre gamme unique*/
 .container-box {
   display: flex;
@@ -174,22 +180,19 @@ section {
   align-items: center;
   margin: 3.75rem 12.5rem 0 0;
   background-color: var(--white);
-  padding:1.5em;
+  padding: 1.5em;
   border-radius: 10% 20% 10% 20%;
   box-shadow: var(--blue) 0px 2px 5px -1px, var(--blue) 0px 1px 3px -1px;
   transition: transform 0.1s ease-out;
 }
 
-.content-about-one:hover {
-  transform: scale(1.1);
-}
 
 .content-about-one ul li {
   text-align: center;
   margin: 0.5em 0 0 0;
 }
-.active-blue{
-  color:var(--blue);
+.active-blue {
+  color: var(--blue);
 }
 .picture-content-two img {
   width: 43.75rem;
@@ -203,15 +206,15 @@ section {
   align-items: center;
   margin: 3.75rem 0 0 12.5rem;
   background-color: var(--white);
-  padding:1.5em;
+  padding: 1.5em;
   border-radius: 20% 10% 20% 10%;
   transition: transform 0.1s ease-out;
   box-shadow: var(--red) 0px 2px 5px -1px, var(--red) 0px 1px 3px -1px;
 }
-.content-about-two:hover{
+.content-about-two:hover {
   transform: scale(1.1);
 }
-.content-about-two ul li{
+.content-about-two ul li {
   text-align: center;
   margin: 0.5em 0 0 0;
 }
@@ -236,25 +239,6 @@ section {
   justify-content: center;
   align-items: center;
   text-align: justify;
-}
-
-/* carousel */
-.text-title {
-  margin: 3em 0 0 4em;
-}
-#carousel {
-  width: 100%;
-  max-width: 50em;
-}
-
-#carousel img {
-  width: 100%;
-
-  /* height: 100%; */
-}
-
-.hidden {
-  display: none;
 }
 
 /*formulaire*/
@@ -317,6 +301,46 @@ textarea {
 form .button-design {
   margin: 0 auto;
 }
+/*style pour le défilement transition*/
+.reveal-loaded .reveal [class*="reveal-"] {
+  opacity: 0 !important;
+  animation: none !important;
+  transition: 0s !important;
+}
+
+.reveal-loaded [class*="reveal-"] {
+  animation: revealAnimation 1s cubic-bezier(0.5, 0, 0, 1) both;
+}
+
+.reveal-loaded .reveal-2 {
+  animation-delay: 0.1s;
+}
+
+.reveal-loaded .reveal-3 {
+  animation-delay: 0.2s;
+}
+
+.reveal-loaded .reveal-4 {
+  animation-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-loaded [class*="reveal-"] {
+    animation: none !important;
+  }
+}
+
+@keyframes revealAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 
 /*Media QUERIES*/
 
@@ -354,10 +378,11 @@ form .button-design {
   h3 {
     font-size: 1em;
   }
-  .content-about-one, .content-about-two {
+  .content-about-one,
+  .content-about-two {
     margin: 0 1em 0 1em;
   }
-  
+
   .picture-content-two img {
     width: 100%;
     height: auto;
@@ -388,3 +413,40 @@ form .button-design {
     flex-direction: column;
   }
 }
+
+/*** MEDIA QUERIES GENERAUX ***/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 1.1em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 1.2em;
+  }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+  body {
+    font-size: 1.25em;
+  }
+ } 

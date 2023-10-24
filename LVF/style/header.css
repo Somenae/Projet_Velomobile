@@ -1,10 +1,9 @@
 :root {
-  --blue: #0B0CAC;
-  --red: #FD0808;
+  --blue: #0b0cac;
+  --red: #fd0808;
   --black: #000;
   --white: #fff;
 }
-
 
 header {
   height: 100%;
@@ -12,13 +11,16 @@ header {
   background-color: var(--white);
 }
 
-.navbar .logo{
-  width: 50%;
-}
 
-#logo{
+
+#logo {
   width: 150px;
   height: 80px;
+}
+#logo1{
+  width:80px;
+  height: 80px;
+  display:none;
 }
 .navbar {
   display: flex;
@@ -27,9 +29,9 @@ header {
   align-items: center;
   box-sizing: border-box;
 }
-.navbar a{
-text-decoration: none;
-color: black;
+.navbar a {
+  text-decoration: none;
+  color: black;
 }
 
 .navlinks ul {
@@ -38,13 +40,12 @@ color: black;
   align-items: center;
   font-family: "Lobster Two", fantasy;
   font-size: 17px;
-
 }
 /*ligne au survol de la souris*/
 .navlinks ul li a {
-  position:relative;
+  position: relative;
 }
- .navlinks ul li a::before {
+.navlinks ul li a::before {
   content: "";
   width: 0;
   height: 2px;
@@ -54,11 +55,10 @@ color: black;
   bottom: -5px;
   left: 0;
   transition: 0.5s ease;
-  
 }
 
 /* Au survol du lien, on élargi le trait */
-  .navlinks ul li a:hover::before {
+.navlinks ul li a:hover::before {
   width: 100%;
   /* Largeur maximale du trait */
 }
@@ -67,38 +67,52 @@ color: black;
 }
 
 .navlinks ul li a {
-  color :var(--blue);
+  color: var(--blue);
 }
 
-.active{
+.active {
   color: var(--red) !important;
 }
 
-#icons{
+#icons {
   cursor: pointer;
   display: none;
 }
 
 /* Gestion mobiles */
 
-@media (max-width: 650px){
-  #icons{
+@media (max-width: 800px) {
+  #icons {
     display: block;
+    margin: 0 1em 0 0;
   }
 
-  #icons:before{
+  #icons:before {
     content: "\2630";
     z-index: 9;
+    font-size: 2em;
+    color: var(--blue)
   }
 
-  .activeBurger #icons:before{
+  .activeBurger #icons:before {
     content: "\2715";
     z-index: 10;
   }
-  .navbar{
+  .navbar {
     height: 130px;
   }
-  nav ul{
+  #logo{
+    display:none;
+  }
+  .logo2{
+    position: absolute;
+    margin: 0 1em 0 1em;
+  }
+  #logo1 {
+    display: block;
+    
+  }
+  nav ul {
     z-index: 5;
     position: absolute;
     left: -100%;
@@ -106,18 +120,18 @@ color: black;
     flex-direction: column;
     background-color: white;
     width: 100%;
-    
+
     transition: 0.25s;
   }
-  
-  nav ul li{
+
+  nav ul li {
     width: 100%;
     text-align: center;
     padding: 3px 0;
   }
 
-  nav.activeBurger ul{
-    left: 35%;
+  nav.activeBurger ul {
+    left: 32%;
     width: 50%;
   }
 }
