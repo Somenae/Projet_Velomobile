@@ -15,7 +15,7 @@ export default class footer extends ManageDom {
       { class: "div-logo" },
     ]);
     const logo = this.createMarkup("img", "", divLogo, [
-      { src: "./assets/imgs/lvf-logo+txt-alpha.png" },
+      { src: "./assets/imgs/logo.png" },
     ]);
     const nav = this.createMarkup("nav", "", divContainer, [
       { class: "ul-box" },
