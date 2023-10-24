@@ -79,6 +79,8 @@ color: black;
   display: none;
 }
 
+/* Gestion mobiles */
+
 @media (max-width: 650px){
   #icons{
     display: block;
@@ -93,9 +95,9 @@ color: black;
     content: "\2715";
     z-index: 10;
   }
-.navbar{
-  height: 130px;
-}
+  .navbar{
+    height: 130px;
+  }
   nav ul{
     z-index: 5;
     position: absolute;
@@ -114,10 +116,8 @@ color: black;
     padding: 3px 0;
   }
 
-  
-
   nav.activeBurger ul{
-    left: 0;
+    left: 35%;
     width: 50%;
   }
 }
