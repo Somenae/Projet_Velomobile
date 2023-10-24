@@ -174,22 +174,20 @@ section {
   align-items: center;
   margin: 3.75rem 12.5rem 0 0;
   background-color: var(--white);
-  padding:1.5em;
+  padding: 1.5em;
   border-radius: 10% 20% 10% 20%;
   box-shadow: var(--blue) 0px 2px 5px -1px, var(--blue) 0px 1px 3px -1px;
   transition: transform 0.1s ease-out;
 }
 
-.content-about-one:hover {
-  transform: scale(1.1);
-}
+
 
 .content-about-one ul li {
   text-align: center;
   margin: 0.5em 0 0 0;
 }
-.active-blue{
-  color:var(--blue);
+.active-blue {
+  color: var(--blue);
 }
 .picture-content-two img {
   width: 43.75rem;
@@ -203,15 +201,15 @@ section {
   align-items: center;
   margin: 3.75rem 0 0 12.5rem;
   background-color: var(--white);
-  padding:1.5em;
+  padding: 1.5em;
   border-radius: 20% 10% 20% 10%;
   transition: transform 0.1s ease-out;
   box-shadow: var(--red) 0px 2px 5px -1px, var(--red) 0px 1px 3px -1px;
 }
-.content-about-two:hover{
+.content-about-two:hover {
   transform: scale(1.1);
 }
-.content-about-two ul li{
+.content-about-two ul li {
   text-align: center;
   margin: 0.5em 0 0 0;
 }
@@ -319,7 +317,45 @@ textarea {
 form .button-design {
   margin: 0 auto;
 }
+/*style pour le défilement transition*/
+.reveal-loaded .reveal [class*="reveal-"] {
+  opacity: 0 !important;
+  animation: none !important;
+  transition: 0s !important;
+}
 
+.reveal-loaded [class*="reveal-"] {
+  animation: revealAnimation 1s cubic-bezier(0.5, 0, 0, 1) both;
+}
+
+.reveal-loaded .reveal-2 {
+  animation-delay: 0.1s;
+}
+
+.reveal-loaded .reveal-3 {
+  animation-delay: 0.2s;
+}
+
+.reveal-loaded .reveal-4 {
+  animation-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-loaded [class*="reveal-"] {
+    animation: none !important;
+  }
+}
+
+@keyframes revealAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 /*Media QUERIES*/
 
 @media screen and (max-width: 992px) {
@@ -356,10 +392,11 @@ form .button-design {
   h3 {
     font-size: 1em;
   }
-  .content-about-one, .content-about-two {
+  .content-about-one,
+  .content-about-two {
     margin: 0 1em 0 1em;
   }
-  
+
   .picture-content-two img {
     width: 100%;
     height: auto;
