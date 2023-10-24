@@ -33,6 +33,11 @@ body {
   background-color: var(--background);
 }
 
+.content-text p {
+  line-height: 1.2em;
+  margin-bottom: .8em;
+}
+
 /*Image qui prend toute la largeur*/
 .wide {
   width: 100%;
@@ -215,6 +220,14 @@ section {
 .content-about-two ul li {
   text-align: center;
   margin: 0.5em 0 0 0;
+}
+
+/* Cartes techniques des modèles */
+.card {
+  border: 2px solid var(--blue);
+  box-shadow: 2px 2px 0 var(--red);
+  padding: 2em;
+  border-radius: 8px;
 }
 
 /*section histoire/usine*/
