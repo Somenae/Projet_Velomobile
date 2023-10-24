@@ -38,6 +38,10 @@ body {
   margin-bottom: .8em;
 }
 
+b {
+  font-weight: 700;
+}
+
 /*Image qui prend toute la largeur*/
 .wide {
   width: 100%;
