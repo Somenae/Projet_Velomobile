@@ -79,10 +79,6 @@ export default class footer extends ManageDom {
       aTab1[3].href = "./modeles.html";
       aTab1[4].href = "#contact";
     }
-    console.log(currentUrl.search("LVF/index.html"));
-    console.log(currentUrl.search("LVF/html/histoire.html"));
-    console.log(currentUrl.search("LVF/html/usines.html"));
-    console.log(currentUrl.search("LVF/html/modeles.html"));
     if (currentUrl.search("LVF/index.html") != -1) {
         aTab1[0].classList.add("active")
     }
