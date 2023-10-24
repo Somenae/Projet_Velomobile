@@ -42,10 +42,11 @@ export default class slideShow extends ManageDom {
         i = 0;
         document.getElementById(`0Child`).classList.remove("hidden");
         document.getElementById(`${this.nb_images - 1}Child`).classList.add("hidden");
+      } else {
+        domElem1.classList.add("hidden");
+        domElem2.classList.remove("hidden");
+        i++;
       }
-      domElem1.classList.add("hidden");
-      domElem2.classList.remove("hidden");
-      i++;
     };
 
     /* Gestion d'événement pour changer d'image et stopper au click */

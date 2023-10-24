@@ -57,7 +57,6 @@ export default class footer extends ManageDom {
       i++;
     }
     let currentUrl = window.location.pathname;
-    console.log(currentUrl);
     if (currentUrl.search("LVF/index.html") !== -1) {
       socialTab[0].src = "./assets/imgs/facebook-f.svg";
       socialTab[1].src = "./assets/imgs/instagram.svg";
