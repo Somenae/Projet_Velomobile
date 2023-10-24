@@ -442,9 +442,14 @@ form .button-design {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
   body {
     font-size: 1.25em;
   }
 }
-  
+
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 1em;
+  }
+}
