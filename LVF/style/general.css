@@ -33,6 +33,11 @@ body {
   background-color: var(--background);
 }
 
+.content-text p {
+  line-height: 1.2em;
+  margin-bottom: .8em;
+}
+
 /*Image qui prend toute la largeur*/
 .wide {
   width: 100%;
@@ -161,7 +166,6 @@ section {
   height: 500px;
 }
 
-
 /*Notre gamme unique*/
 .container-box {
   display: flex;
@@ -185,7 +189,6 @@ section {
   box-shadow: var(--blue) 0px 2px 5px -1px, var(--blue) 0px 1px 3px -1px;
   transition: transform 0.1s ease-out;
 }
-
 
 .content-about-one ul li {
   text-align: center;
@@ -219,6 +222,14 @@ section {
   margin: 0.5em 0 0 0;
 }
 
+/* Cartes techniques des modèles */
+.card {
+  border: 2px solid var(--blue);
+  box-shadow: 2px 2px 0 var(--red);
+  padding: 2em;
+  border-radius: 8px;
+}
+
 /*section histoire/usine*/
 .container-picture-three {
   text-align: center;
@@ -238,7 +249,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+ 
 }
 
 /*formulaire*/
@@ -341,7 +352,6 @@ form .button-design {
   }
 }
 
-
 /*Media QUERIES*/
 
 @media screen and (max-width: 992px) {
@@ -376,7 +386,7 @@ form .button-design {
     margin: 1em 1em 0 0;
   }
   h3 {
-    font-size: 1em;
+    font-size: 1.75em;
   }
   .content-about-one,
   .content-about-two {
@@ -442,11 +452,38 @@ form .button-design {
   body {
     font-size: 1.2em;
   }
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   body {
     font-size: 1.25em;
   }
- } 
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 1em;
+  }
+  .picture-content-title img {
+    width: 700px;
+    height: 500px;
+  }
+  .picture-content-one img {
+    width: 700px;
+    height: 500px;
+  }
+  .picture-content-two img {
+    width: 700px;
+    height: 500px;
+  }
+  .model img{
+    width: 700px;
+    height:400px;
+  }
+  .container-picture-three img {
+    width: 700px;
+    height: 500px;
+  }
+
+}
