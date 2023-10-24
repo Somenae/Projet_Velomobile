@@ -23,20 +23,35 @@ export default class Marker {
     this.eventHandler();
   }
 
+  // Fait le rendu du marqueur sur la carte
   render() {
     let marker =  L.marker(this.xy, {icon: this.icon}).addTo(this.map);
     return marker.bindPopup(`<h4>${this.popupHeader}</h4><p>${this.popupTxt}</p>`);
   }
 
   eventHandler() {
-    //console.log(this.mark._icon.classList);
-    
+    // Quand on clique sur la carte, les marqueurs ne sont plus actifs.
+    this.map.on('click', (e) => {
+      this.removePinActive();
+    })
+
+    // Quand on clique sur un marqueur, il s'active et s'anime.
     this.mark.on('click', (e) => {
-      let markers = document.querySelectorAll(".leaflet-marker-icon");
-      for (const marker of markers) {
-        marker.classList.remove("pin-active");
-      }
+      this.removePinActive();
       this.mark._icon.classList.add("pin-active");
     })
   }
+
+  // Méthode qui retire la classe "pin-active" de tous les marqueurs de la carte
+  removePinActive() {
+    let markers = document.querySelectorAll(".leaflet-marker-icon");
+    for (const marker of markers) {
+      marker.classList.remove("pin-active");
+    }
+  }
+
+  /**
+   * Problème : le marqueur reste animé lorsqu'on ferme la popup avec la croix.
+   * Solution à la con : masquer la croix avec CSS
+   */
 }

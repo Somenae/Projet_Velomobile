@@ -18,6 +18,17 @@
   filter: drop-shadow(0 0 4px dimgrey);
 }
 
+.leaflet-popup-close-button {
+  display: none;
+}
+
+.leaflet-popup-content h4 {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
 /* Animation du marker leaflet sur lequel on a cliqué */
 .pin-active {
   animation-name: floating;
