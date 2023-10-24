@@ -19,11 +19,11 @@ footer {
 .ul-box {
   margin: 0 0 0 3.5em;
   text-align: center;
-  font-family: 'Lobster two', sans-serif;
+  font-family: "Lobster two", sans-serif;
 }
-.div-title-tab h3{
+.div-title-tab h3 {
   margin: 0 0 0.5em 0;
-  color : var(--red);
+  color: var(--red);
 }
 .ul-box ul li a {
   text-decoration: none;
@@ -63,14 +63,12 @@ footer {
   .div-social-tab {
     display: flex;
     margin: 0 1em 0 0;
-    
   }
   .div-social-tab img {
     width: 100%;
   }
-  .div-icon-tab{
-    display:flex;
+  .div-icon-tab {
+    display: flex;
     flex-direction: row;
   }
-
 }

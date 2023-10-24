@@ -2,16 +2,16 @@
   background-image: url("../assets/imgs/PhotoReal_create_a_shopin_a_street_in_south_of_france_selling_2.jpg");
 }
 
-.container-content-history{
-  display:flex;
+.container-content-history {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.wide img{
+.wide img {
   width: 100%;
 }
-.container-content-about{
+.container-content-about {
   display: flex;
   justify-content: center;
   align-items: center;
