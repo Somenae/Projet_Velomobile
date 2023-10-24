@@ -33,6 +33,11 @@ body {
   background-color: var(--background);
 }
 
+.content-text p {
+  line-height: 1.2em;
+  margin-bottom: .8em;
+}
+
 /*Image qui prend toute la largeur*/
 .wide {
   width: 100%;
