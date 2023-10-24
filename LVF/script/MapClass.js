@@ -13,33 +13,35 @@ export default class Marker {
     this.popupTxt = popupTxt;
     this.map = map;
     this.icon = L.icon({
-      iconUrl: `../assets/imgs/${ icon }.png`,
-      className: `pin-${ icon }`,
+      iconUrl: `../assets/imgs/${icon}.png`,
+      className: `pin-${icon}`,
       iconSize: [50, 50],
       iconAnchor: [25, 49],
-      popupAnchor: [0, -55]
-      });
+      popupAnchor: [0, -55],
+    });
     this.mark = this.render();
     this.eventHandler();
   }
 
   // Fait le rendu du marqueur sur la carte
   render() {
-    let marker =  L.marker(this.xy, {icon: this.icon}).addTo(this.map);
-    return marker.bindPopup(`<h4>${this.popupHeader}</h4><p>${this.popupTxt}</p>`);
+    let marker = L.marker(this.xy, { icon: this.icon }).addTo(this.map);
+    return marker.bindPopup(
+      `<h4>${this.popupHeader}</h4><p>${this.popupTxt}</p>`
+    );
   }
 
   eventHandler() {
     // Quand on clique sur la carte, les marqueurs ne sont plus actifs.
-    this.map.on('click', (e) => {
+    this.map.on("click", (e) => {
       this.removePinActive();
-    })
+    });
 
     // Quand on clique sur un marqueur, il s'active et s'anime.
-    this.mark.on('click', (e) => {
+    this.mark.on("click", (e) => {
       this.removePinActive();
       this.mark._icon.classList.add("pin-active");
-    })
+    });
   }
 
   // Méthode qui retire la classe "pin-active" de tous les marqueurs de la carte

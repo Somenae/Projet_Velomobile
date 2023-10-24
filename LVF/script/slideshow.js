@@ -13,7 +13,7 @@ export default class slideShow extends ManageDom {
     super();
     this.nb_images = nb_images;
     this.speed = speed;
-    this.imagesArray = imagesArray
+    this.imagesArray = imagesArray;
     this.domElement = this.render();
     this.animateSs(this.speed);
   }
@@ -23,9 +23,13 @@ export default class slideShow extends ManageDom {
     let imgDiv = document.getElementById("carousel");
     for (let i = 0; i < this.nb_images; i++) {
       if (i === 0) {
-        this.createMarkup("img", "", imgDiv, [{ src: this.imagesArray[i], id: `${i}Child` }]);
+        this.createMarkup("img", "", imgDiv, [
+          { src: this.imagesArray[i], id: `${i}Child` },
+        ]);
       } else {
-        this.createMarkup("img", "", imgDiv, [{ src: this.imagesArray[i], class: `hidden`, id: `${i}Child` }]);
+        this.createMarkup("img", "", imgDiv, [
+          { src: this.imagesArray[i], class: `hidden`, id: `${i}Child` },
+        ]);
       }
     }
     return { imgDiv };
@@ -41,7 +45,9 @@ export default class slideShow extends ManageDom {
       if (i == this.nb_images - 1) {
         i = 0;
         document.getElementById(`0Child`).classList.remove("hidden");
-        document.getElementById(`${this.nb_images - 1}Child`).classList.add("hidden");
+        document
+          .getElementById(`${this.nb_images - 1}Child`)
+          .classList.add("hidden");
       } else {
         domElem1.classList.add("hidden");
         domElem2.classList.remove("hidden");
@@ -54,12 +60,12 @@ export default class slideShow extends ManageDom {
     let pause = false;
     this.domElement.imgDiv.onclick = () => {
       switch (pause) {
-        case true :
+        case true:
           interval = setInterval(myTimer, e);
           pause = false;
           console.log(pause);
           break;
-        case false :
+        case false:
           clearInterval(interval);
           pause = true;
           console.log(pause);
