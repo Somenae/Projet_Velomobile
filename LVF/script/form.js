@@ -22,7 +22,7 @@ export default class contactForm extends ManageDom {
         const inputPhone = this.createMarkup("input", "", divEmail, [{"type":"text"}, {"placeholder":"Téléphone"}, {"class":"input"}, {"id":"phone"}, {"name":"phone"}]);
         const labelHow = this.createMarkup("label", "Comment avez-vous entendu parler de nous ?", form, [{"class":"label"}, {"for":"how"}]);
         const inputHow = this.createMarkup("input", "", form, [{"type":"text"}, {"placeholder":"Comment avez-vous entendu parler de nous ?"}, {"class":"input"}, {"id":"how"}, {"name":"how"}]);
-        const inputMessage = this.createMarkup("textarea", "", form, [{"type":"text"}, {"placeholder":"Message"}, {"class":"textarea"}, {"id":"message"}, {"name":"message"}]);
+        const inputMessage = this.createMarkup("textarea", "", form, [{"type":"text"}, {"placeholder":"Message"}, {"class":"textarea"}, {"id":"message"}, {"name":"message"}, {"rows":5}]);
         const button = this.createMarkup("button", "Envoyer", form, [{"class":"button-design"},{"type": "submit", "id": "formButton"}])
     }
 }

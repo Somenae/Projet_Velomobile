@@ -10,6 +10,7 @@ form {
   padding: 1.5em;
   border-radius: 1.5em;
   background-color: var(--white);
+  box-shadow: 0 2px 4px dimgray;
 }
 form h3 {
   text-align: center;
@@ -53,6 +54,8 @@ textarea {
   padding: 1em;
   border-radius: 1em;
   border: 2px solid var(--red);
+  font-family: inherit;
+  font-size: inherit;
 }
 
 form .button-design {
