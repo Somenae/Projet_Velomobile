@@ -11,8 +11,9 @@ export default class footer extends ManageDom {
     const divContainer = this.createMarkup("div", "", footer, [
       { class: "div-container" },
     ]);
-    const divLogo = this.createMarkup("div", "", divContainer, [
+    const divLogo = this.createMarkup("a", "", divContainer, [
       { class: "div-logo" },
+      { href: "#"}
     ]);
     const logo = this.createMarkup("img", "", divLogo, [
       { src: "./assets/imgs/logo.png" },
