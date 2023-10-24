@@ -247,7 +247,7 @@ section {
   width: 100%;
   height: 45em;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 
 #carousel img {

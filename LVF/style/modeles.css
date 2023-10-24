@@ -13,6 +13,10 @@
   transform: scaleX(-1);
 }
 
+.container-carousel{
+  flex-direction: column;
+}
+
 @media screen and (max-width: 992px) {
   .container-title {
     width: 100%;
