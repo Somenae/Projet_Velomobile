@@ -79,19 +79,21 @@ export default class footer extends ManageDom {
       aTab1[3].href = "./modeles.html";
       aTab1[4].href = "#contact";
     }
-    switch(currentUrl.replace("/projetBobo/", "")) {
-        case "LVF/index.html" :
-            aTab1[0].classList.add("active");
-            break;
-        case "LVF/html/histoire.html" :
-            aTab1[1].classList.add("active");
-            break;
-        case "LVF/html/usines.html" :
-            aTab1[2].classList.add("active");
-            break;
-        case "LVF/html/modeles.html" :
-            aTab1[3].classList.add("active");
-            break;
+    console.log(currentUrl.search("LVF/index.html"));
+    console.log(currentUrl.search("LVF/html/histoire.html"));
+    console.log(currentUrl.search("LVF/html/usines.html"));
+    console.log(currentUrl.search("LVF/html/modeles.html"));
+    if (currentUrl.search("LVF/index.html") == 12) {
+        aTab1[0].classList.add("active")
+    }
+    if (currentUrl.search("LVF/html/histoire.html") == 12) {
+        aTab1[1].classList.add("active")
+    }
+    if (currentUrl.search("LVF/html/usines.html") == 12) {
+        aTab1[2].classList.add("active")
+    }
+    if (currentUrl.search("LVF/html/modeles.html") == 12) {
+        aTab1[3].classList.add("active")
     }
   }
 }
