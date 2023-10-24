@@ -13,7 +13,7 @@ export default class footer extends ManageDom {
     ]);
     const divLogo = this.createMarkup("a", "", divContainer, [
       { class: "div-logo" },
-      { href: "#"}
+      { href: "#" },
     ]);
     const logo = this.createMarkup("img", "", divLogo, [
       { src: "./assets/imgs/logo.png" },
@@ -53,7 +53,9 @@ export default class footer extends ManageDom {
     aTab1[4].innerText = "Contactez-nous";
     i = 0;
     while (i < 4) {
-      aTab2[i] = this.createMarkup("a", "", divIconTab, [{"class": `icon${i}`}]);
+      aTab2[i] = this.createMarkup("a", "", divIconTab, [
+        { class: `icon${i}` },
+      ]);
       socialTab[i] = this.createMarkup("img", "", aTab2[i]);
       i++;
     }
@@ -81,16 +83,16 @@ export default class footer extends ManageDom {
       aTab1[4].href = "#contact";
     }
     if (currentUrl.search("LVF/index.html") != -1) {
-        aTab1[0].classList.add("active")
+      aTab1[0].classList.add("active");
     }
     if (currentUrl.search("LVF/html/histoire.html") != -1) {
-        aTab1[1].classList.add("active")
+      aTab1[1].classList.add("active");
     }
     if (currentUrl.search("LVF/html/usines.html") != -1) {
-        aTab1[2].classList.add("active")
+      aTab1[2].classList.add("active");
     }
     if (currentUrl.search("LVF/html/modeles.html") != -1) {
-        aTab1[3].classList.add("active")
+      aTab1[3].classList.add("active");
     }
   }
 }
