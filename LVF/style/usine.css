@@ -122,7 +122,6 @@ section {
   justify-content: space-between;
 }
 .content-text {
-  
   padding: 2em;
 }
 .picture-content-title img {
@@ -149,7 +148,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3.75rem 12.5rem 0 0;
+  padding: 2em;
 }
 .content-about-one ul li {
   text-align: end;
@@ -164,7 +163,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
- padding: 2em;
+  padding: 2em;
 }
 .container-picture-three {
   text-align: center;
@@ -183,7 +182,6 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 form {
@@ -286,20 +284,18 @@ form .button-design {
     margin: 1em 1em 0 0;
   }
   h3 {
-    font-size: 1em;
+    font-size: 1.75em;
   }
-  .content-about-one {
-    margin: 0 1em 0 0;
-  }
+  .content-about-one,
   .content-about-two {
-    margin: 0 0 0 1em;
+    margin: 0 1em 0 1em;
   }
   .picture-content-two img {
     width: 100%;
     height: auto;
   }
-  .container-box{
-    display:flex;
+  .container-box {
+    display: flex;
     flex-direction: column;
   }
   .container-picture-three img {
@@ -317,10 +313,10 @@ form .button-design {
     display: flex;
     flex-direction: column;
   }
-  .threeBis .container-picture-three {
+  .threeBis .content-about-two {
     order: 1;
   }
-  .threeBis .container-content-three {
+  .threeBis .content-about-two {
     order: 2;
   }
 }
@@ -353,11 +349,17 @@ form .button-design {
   body {
     font-size: 1.2em;
   }
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
   body {
     font-size: 1.25em;
   }
- } 
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    font-size: 1em;
+  }
+}
