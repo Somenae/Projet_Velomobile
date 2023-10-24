@@ -66,7 +66,7 @@ export default class footer extends ManageDom {
       aTab1[1].href = "./html/histoire.html";
       aTab1[2].href = "./html/usines.html";
       aTab1[3].href = "./html/modeles.html";
-      aTab1[4].href = "#";
+      aTab1[4].href = "#contact";
     } else {
       logo.src = "./../assets/imgs/lvf-logo+txt-alpha.png";
       socialTab[0].src = "./../assets/imgs/facebook-f.svg";
@@ -77,7 +77,25 @@ export default class footer extends ManageDom {
       aTab1[1].href = "./histoire.html";
       aTab1[2].href = "./usines.html";
       aTab1[3].href = "./modeles.html";
-      aTab1[4].href = "#";
+      aTab1[4].href = "#contact";
+    }
+    switch(currentUrl.replace("/projetBobo/", "")) {
+        case "LVF/index.html" :
+            aTab1[0].classList.add("active");
+            console.log("Pouet1");
+            break;
+        case "LVF/html/histoire.html" :
+            aTab1[1].classList.add("active");
+            console.log("Pouet2");
+            break;
+        case "LVF/html/usines.html" :
+            aTab1[2].classList.add("active");
+            console.log("Pouet3");
+            break;
+        case "LVF/html/modeles.html" :
+            aTab1[3].classList.add("active");
+            console.log("Pouet4");
+            break;
     }
   }
 }
