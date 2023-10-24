@@ -33,9 +33,19 @@ body {
   background-color: var(--background);
 }
 
-/*Image qui prend toue la largeur*/
+/*Image qui prend toute la largeur*/
 .wide {
   width: 100%;
+}
+
+.content-text p {
+  line-height: 1.2em;
+  margin-bottom: .8em;
+}
+
+.content-text {
+  max-width: 50em;
+  margin: auto;
 }
 
 h2 {
@@ -144,12 +154,17 @@ section {
   width: 35rem;
   height: auto;
 }
-.content-about-one {
+.content-about-one, .content-about-two {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2em;
 }
+
+.content-about-one p, .content-about-two p {
+  width: 100%;
+}
+
 .content-about-one ul li {
   text-align: end;
 }
@@ -159,12 +174,6 @@ section {
   height: 25rem;
 }
 
-.content-about-two {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em;
-}
 .container-picture-three {
   text-align: center;
 }
