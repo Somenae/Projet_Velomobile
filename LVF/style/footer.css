@@ -42,8 +42,9 @@ footer {
   margin: 0 1em 0 0;
 }
 .div-logo img {
-  width: 120px;
+  width: 80px;
   height: 80px;
+  margin: 0 1em 0 1em;
 }
 
 /* couleurs icones */

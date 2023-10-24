@@ -11,13 +11,16 @@ header {
   background-color: var(--white);
 }
 
-.navbar .logo {
-  width: 50%;
-}
+
 
 #logo {
   width: 150px;
   height: 80px;
+}
+#logo1{
+  width:80px;
+  height: 80px;
+  display:none;
 }
 .navbar {
   display: flex;
@@ -78,7 +81,7 @@ header {
 
 /* Gestion mobiles */
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   #icons {
     display: block;
     margin: 0 1em 0 0;
@@ -97,6 +100,17 @@ header {
   }
   .navbar {
     height: 130px;
+  }
+  #logo{
+    display:none;
+  }
+  .logo2{
+    position: absolute;
+    margin: 0 1em 0 1em;
+  }
+  #logo1 {
+    display: block;
+    
   }
   nav ul {
     z-index: 5;
