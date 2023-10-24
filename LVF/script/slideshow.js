@@ -24,10 +24,8 @@ export default class slideShow extends ManageDom {
     for (let i = 0; i < this.nb_images; i++) {
       if (i === 0) {
         this.createMarkup("img", "", imgDiv, [{ src: this.imagesArray[i], id: `${i}Child` }]);
-        console.log("Pouet1");
       } else {
         this.createMarkup("img", "", imgDiv, [{ src: this.imagesArray[i], class: `hidden`, id: `${i}Child` }]);
-        console.log("Pouet2");
       }
     }
     return { imgDiv };

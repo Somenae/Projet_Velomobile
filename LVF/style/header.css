@@ -38,8 +38,30 @@ color: black;
   align-items: center;
   font-family: "Lobster Two", fantasy;
   font-size: 17px;
+
+}
+/*ligne au survol de la souris*/
+.navlinks ul li a {
+  position:relative;
+}
+ .navlinks ul li a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--red);
+  /* Couleur du trait */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.5s ease;
+  
 }
 
+/* Au survol du lien, on élargi le trait */
+  .navlinks ul li a:hover::before {
+  width: 100%;
+  /* Largeur maximale du trait */
+}
 .navlinks ul li {
   margin: 0 40px 0 0;
 }
@@ -57,6 +79,8 @@ color: black;
   display: none;
 }
 
+/* Gestion mobiles */
+
 @media (max-width: 650px){
   #icons{
     display: block;
@@ -71,15 +95,18 @@ color: black;
     content: "\2715";
     z-index: 10;
   }
-
+  .navbar{
+    height: 130px;
+  }
   nav ul{
     z-index: 5;
-    position: fixed;
+    position: absolute;
     left: -100%;
-    top: 10%;
+    top: 0;
     flex-direction: column;
     background-color: white;
     width: 100%;
+    
     transition: 0.25s;
   }
   
@@ -89,11 +116,8 @@ color: black;
     padding: 3px 0;
   }
 
-  nav li:hover{
-    background-color: rgb(15, 15, 15);
-  }
-
   nav.activeBurger ul{
-    left: 0;
+    left: 35%;
+    width: 50%;
   }
 }
