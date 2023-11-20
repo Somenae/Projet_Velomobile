@@ -1,4 +1,4 @@
-# projetBobo
+# projet vélomobile français
 
 Contexte de l'entreprise:
 start-up qui a levé plusieurs millions 11Millions a peu pres ya 2-3 mois 1 ans et demi de preparation au niveau du projet. le client aime bcp la nature, aime le vélo, se retrouve bloqué dans le monde rural avec sa voiture donc a reflechi a un moyen de débloquer. pas besoin de consommer, limitation de batterie. vélomobile coute giga cher. viser des vélos dans les 3 a 6k. objectif 40,50km/h pour des personnes qui doivent faire environ 20 a 30km de trajet.
